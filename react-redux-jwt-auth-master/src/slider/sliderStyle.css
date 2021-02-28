@@ -1,0 +1,817 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+.js .slider-single > div:nth-child(1n+2) {
+    display: none;
+}
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) {
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+    color: #ffffff;
+    background: #333;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.slider-single h3 {
+    line-height: 10rem;
+}
+
+.slider-nav h3::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+}
+
+.slider-nav h3 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide {
+    cursor: pointer;
+}
+
+.slick-slide.is-active h3 {
+    color: #c00;
+    background-color: #ffffff;
+}
+
+.slider-types {
+    height: min-content;
+}
+
+.header_typeOfFence {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    /*margin-bottom: 2%;*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: #333333;
+}
+
+/*.fenseDescription {*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*    flex-direction: row;*/
+/*    font-family: 'Source Sans Pro', sans-serif;*/
+/*    width: 60%;*/
+/*    margin-left: 5%;*/
+/*    margin-right: 10%;*/
+/*    overflow-y: scroll;*/
+/*}*/
+
+.text_fenseDescription h4 {
+    background-color: white;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #333;
+}
+
+.text_fenseDescription {
+    width: 30%;
+    height: 15rem;
+    margin-left: 13%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border: 1px solid #333;
+    color: black;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.temporaryFencingDescription {
+    width: 80%;
+    height: 320px;
+    margin-right: 5%;
+}
+
+.rancho_text_fenseDescription {
+    width: 90%;
+    height: 320px;
+    margin-right: 10%;
+}
+
+ol {
+    list-style: none;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.num {
+    height: 40px;
+    width: 80px;
+    font-size: 19px;
+    color: rgb(253, 169, 0);
+}
+
+.ol_fenseDescription {
+    width: 80%;
+    height: 16rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #333;
+}
+
+.metalFenceDescription {
+    width: 30%;
+    height: 15rem;
+}
+
+.metalDetailsFenceDescription {
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.metalDetailsFenceDescription li {
+    font-size: 14px;
+}
+
+.imgDetails_fenseDescription {
+    height: 200px;
+    padding: 15px;
+    margin-top: 2%;
+    float: right;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+.details_fenseDescription {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider_color_of_Fence h2 {
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.chooseColorOfFence {
+    width: 100%;
+    /*height: 40%;*/
+}
+
+.slider_color_of_Fence {
+    width: 40%;
+    margin-bottom: 7%;
+}
+
+.h3_slider_color_of_Fence {
+    font-size: 10px;
+    color: #333333;
+    background-color: white;
+}
+
+.color_of_Fence {
+    height: 150px;
+    width: 150px;
+    padding: 3%;
+    margin-left: 45%;
+}
+
+.columns_of_Fence {
+    height: 150px;
+    width: 150px;
+    padding: 3%;
+    margin-left: 45%;
+    border-radius: 100px;
+}
+
+.fenceType_of_Fence {
+    height: 150px;
+    width: 150px;
+    padding: 3%;
+    margin-left: 45%;
+}
+
+.colors_and_Сolumns_of_Fence {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button {
+    height: 5rem;
+    width: 13rem;
+    margin-left: 45%;
+    margin-top: -12%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: rgb(253, 109, 0);
+    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 80%);
+}
+
+.hoverHR {
+    width: 450px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background-color: #333333;
+}
+
+.marginSlider {
+    margin-left: 20%;
+}
+
+.GateshoverHR:active {
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    background: rgb(253, 109, 0);
+    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 80%);
+}
+
+.fenceHeader {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-right: 20%;
+}
+
+.circleBorderFence {
+    height: 150px;
+    width: 150px;
+    padding: 3%;
+    margin-left: 35%;
+}
+.cardBodyColor{
+    background-color: #333;
+}
+.sliderMetalFence h2 {
+    padding: 0;
+    margin-top: -5%;
+    font-size: 16px;
+}
+
+.RanchoFence {
+    width: 100%;
+    /*display: flex;*/
+    /*justify-content: space-evenly;*/
+}
+
+.rancho_fenseDescription {
+    height: 340px;
+    padding: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #333;
+}
+
+.rancho_fenseDescription img {
+    height: 150px;
+    width: 200px;
+    position: sticky;
+    float: right;
+}
+
+.rancho_fenseDescription li {
+    font-size: 20px;
+}
+
+.combiRancho {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.temporaryImg {
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*float: left;*/
+}
+
+.addHoverForTemporaryFence {
+    width: 30%;
+    height: 150px;
+
+}
+
+.temporaryImg .addHoverForTemporaryFence:hover {
+    height: 200px;
+    width: 40%;
+    border: none;
+    /*z-index: 1;*/
+}
+
+.temporary_fenseDescription {
+    width: 700px;
+    height: 340px;
+    margin-right: 10%;
+    overflow-y: scroll;
+}
+
+.temporary_style {
+    /*font-size: 12px;*/
+    border: none;
+}
+
+.temporaryFenceDescription {
+    display: flex;
+    flex-direction: row;
+}
+
+.parametersTemporaryFence h2 {
+    height: 40px;
+    width: 50%;
+    margin-left: 15%;
+    text-align: center;
+    color: white;
+    background-color: #333333;
+}
+
+.parametersTemporaryFence {
+    display: table;
+    width: 100%;
+    margin-left: 10%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.tableWeldedFence {
+    /*margin-left: 13%;*/
+    font-size: 12px;
+    margin-bottom: 5%;
+
+}
+
+.tableWeldedFence th {
+    height: 30px;
+}
+
+.tableWeldedFence td {
+    display: table-cell;
+    height: 30px;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+.tableWeldedFence h3 {
+    width: 50%;
+    margin-left: 20%;
+    font-size: 14px;
+}
+
+.tableWeldedFence img {
+    height: 40px;
+    width: 40px;
+}
+
+.btn_of_Fence {
+    margin-top: 2%;
+}
+
+.parametersTemporaryFence tr {
+    display: table-row;
+}
+
+.parametersTemporaryFence td {
+    display: table-cell;
+    width: 35%;
+    height: 50px;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+/*tr:hover {*/
+/*    background: rgb(253, 109, 0);*/
+/*    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 60%);*/
+/*}*/
+
+.temporaryBttn {
+    height: 60px;
+    margin-top: 3%;
+}
+
+.clickHeaderSlider:hover {
+    width: 80px;
+    background-color: chocolate;
+}
+
+.parametersWeldedGridFence {
+    display: table;
+    width: 80%;
+    padding: 3%;
+    margin-left: 10%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+th img {
+    height: 70px;
+    width: 70px;
+    margin-left: 40%;
+}
+
+th h3 {
+    font-size: 17px;
+    padding: 5px;
+}
+
+.welded_fenseDescription {
+    overflow-y: scroll;
+}
+
+.imgWeldedFence {
+    height: 150px;
+    width: 150px;
+    float: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgWeldedFence:hover {
+    height: 350px;
+    width: 350px;
+}
+
+.welded_text_fenseDescription {
+    width: 45%;
+    margin-left: 7%;
+    margin-right: 4%;
+}
+
+.gatesImgStyle {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 1%;
+    padding: 2%;
+    border: 1px solid #333;
+}
+
+.gatesImgStyle img {
+    height: 200px;
+    width: 20%;
+}
+
+.gatesImgStyle .noHoverGatesStyle:hover {
+    height: 300px;
+    width: 30%;
+}
+
+.GatesdescriptionAndInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.gates_fenseDescription {
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 10%;
+    overflow-y: scroll;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.swingGates {
+    height: 300px;
+    width: 40%;
+    padding: 1%;
+    margin-left: 20%;
+    border: none;
+}
+
+.swingGates:hover {
+    height: 700px;
+    width: 70%;
+}
+
+.wicketDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.noHoverGatesStyle_1 {
+    margin-left: 20%;
+}
+
+.text_fenseDescription_GatesStyle {
+    display: flex;
+    flex-direction: row;
+}
+
+.noHoverGatesStyle_2 {
+    width: 50%;
+    margin-left: 10%;
+}
+
+/*GuaranteesHeader*/
+.guaranteesHeader {
+    margin-top: 2%;
+    width: 100%;
+    padding-bottom: 1%;
+    background: #ffffff url(../img/marbleFont.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.weGuarantYou_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+.rowGuarantees {
+    width: 100%;
+    margin-left: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.guarantees_block {
+    height: 210px;
+    width: 50%;
+    padding: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.guarantees_h3 {
+    /*padding: 5%;*/
+    color: #333333;
+    font-size: 20px;
+    text-align: center;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+}
+
+.guarantees_block:hover {
+    height: 210px;
+    width: 50%;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.guarantees_icons {
+    height: 100px;
+    width: 100px;;
+}
+
+.gatesH1 {
+    /*width: 40%;*/
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    background: rgb(253, 109, 0);
+    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 60%);
+}
+
+/**/
+/**/
+/**/
+.modalCalculatingWindow {
+    max-height: 500px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 15%;
+}
+
+.modal.modal--is-open {
+    height: 90%;
+    width: 70%;
+    padding: 15px;
+    display: block;
+    /*border: none;*/
+    outline: none;
+    border: 1px solid black;
+    border-radius: 0;
+    /*background-color: rgba(150, 150, 150, 0.1);*/
+    /*background-image: url("../img/calcIcon/3459071.jpg");*/
+    /*background-size: cover;*/
+    font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+}
+
+.modal__content {
+    position: relative;
+    padding: 20px;
+    background-color: #810d0d;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    overflow-y: hidden;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modalWindowStyle {
+    height: 500px;
+    width: 100%;
+}
+
+.iconCloseStyle {
+    margin-left: 98%;
+    padding: 0;
+    height: 15px;
+    width: 15px;
+
+}
+
+.mainPageBtn {
+    height: 50px;
+    width: 170px;
+    margin-top: 10%;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.formForCalc {
+    height: 500px;
+}
+
+/**/
+/**/
+/**/
+.dropDownMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-control {
+    border: 2px solid black;
+}
+
+select {
+    font-size: 18px;
+}
+
+.calcIconStyle {
+    height: 25px;
+    width: 25px;
+    padding-right: 10px;
+}
+
+.badge {
+    font-size: 19px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.selectOptionStl {
+    width: max-content;
+    padding: 10px;
+}
+
+/*.gatesBtnModalStl{*/
+/*    margin-top: -170px;*/
+/*}*/
+.clearBtnStyle {
+    width: 150px;
+    margin-left: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.dispValue {
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.showOpenNodal {
+    display: none;
+}
+
+.colorsAndColumnsOfFence {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.fenceDescr {
+    width: 90%;
+    margin: 0 2% 0 2%;
+}
+.temporaryFencingStyle{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+/**/
+/**/
+/**/
+
+/*.bd-placeholder-img {*/
+/*    font-size: 1.125rem;*/
+/*    text-anchor: middle;*/
+/*    -webkit-user-select: none;*/
+/*    -moz-user-select: none;*/
+/*    user-select: none;*/
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*    .bd-placeholder-img-lg {*/
+/*        font-size: 3.5rem;*/
+/*    }*/
+/*}*/
+.small_imageCarousel{
+    height: 150px;
+    width: 150px;
+    margin: 2%;
+}
+.imageCarousel{
+    height: 400px;
+    width: 400px;
+}
+.featurette-heading{
+    text-align: center;
+}
+.carouselImg_margin{
+    margin-left: 100px;
+}
+.carouselText_p{
+    text-align: justify;
+    padding:10px;
+    height: 150px;
+    width: 300px;
+    overflow-y: scroll;
+}
+.carouselImgSmall{
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    margin-left: 50px;
+}

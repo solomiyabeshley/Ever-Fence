@@ -1,0 +1,608 @@
+html {
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.card-container.card {
+    max-width: 350px !important;
+    padding: 40px 40px;
+}
+
+.card {
+    background-color: #f7f7f7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.navbar {
+    height: min-content;
+}
+
+/*.logoStyleHeader {*/
+/*    width: 75%;*/
+/*}*/
+.logo {
+    height: min-content;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*margin-right: -150px;*/
+
+}
+
+.logo > p {
+    width: 200px;
+    font-size: 15px;
+}
+
+.pTextStyle {
+    width: 20%;
+}
+
+.contact_us_icon, .working_hours_icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.btnStyle {
+    height: 50px;
+    width: 120px;
+    margin-right: 20px;
+    /*padding: 5%;*/
+    color: black;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.btn-outline-primary {
+    border-radius: 0;
+    border-color: black;
+}
+
+.btn-outline-primary:hover {
+    border-color: black;
+    color: white;
+}
+
+.headerBtn {
+    height: 60px;
+    width: 220px;
+    padding: 5%;
+    font-size: 19px;
+    margin-left: 15%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 3px #333;
+    transition: color 0.35s 0.1166666667s;
+    position: relative;
+    outline: none;
+}
+
+.draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.draw-border::before {
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+.draw-border::after {
+    border-top-width: 3px;
+    border-right-width: 3px;
+}
+
+.draw-border:hover {
+    color: #c1c1c1;
+}
+
+.draw-border:hover::before, .draw-border:hover::after {
+    border-color: #c1c1c1;
+    transition: border-color 0s, width 0.35s, height 0.35s;
+    width: 100%;
+    height: 100%;
+}
+
+.draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.35s;
+}
+
+.draw-border:hover::after {
+    transition-delay: 0s, 0.35s, 0s;
+}
+
+.button-drawing {
+    box-shadow: inset 0 0 0 3px #ffaa00;
+    transition: color 0.35s 0.1166666667s;
+    position: relative;
+    outline: none;
+}
+
+.button-drawing::before, .button-drawing::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.button-drawing::before {
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+.button-drawing::after {
+    border-top-width: 3px;
+    border-right-width: 3px;
+}
+
+.button-drawing:hover {
+    color: #ac4900;
+}
+
+.button-drawing:hover::before, .button-drawing:hover::after {
+    border-color: #ac4900;
+    transition: border-color 0s, width 0.35s, height 0.35s;
+    width: 100%;
+    height: 100%;
+}
+
+.button-drawing:hover::before {
+    transition-delay: 0s, 0s, 0.35s;
+}
+
+.button-drawing:hover::after {
+    transition-delay: 0s, 0.35s, 0s;
+}
+
+.btn-outline-dark {
+    border-radius: 0;
+    margin-right: 20px;
+    /*margin-left: 2%;*/
+}
+
+.form {
+    margin: 5%;
+    height: 31rem;
+    width: 25rem;
+    padding: 3% 5%;
+    text-align: center;
+    background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form h2 {
+    margin-bottom: 3rem;
+    font-size: 22px;
+    font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    line-height: 1;
+}
+
+.form h2 span {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.form_input {
+    height: 3.3rem;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form_input::-webkit-input-placeholder {
+    color: #999;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+.form_input::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+.form_input:-moz-placeholder {
+    color: #999;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+.form_input:-ms-input-placeholder {
+    color: #999;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+.form_input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form_input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.form_input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.form_input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form_notice {
+    margin-top: 15%;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/*calc*/
+.modal.modal--is-open {
+    display: block;
+    /*position: relative;*/
+    width: 400px;
+    height: 150px;
+    /*padding: 40px;*/
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.mainPageBtn {
+    height: 50px;
+    width: 170px;
+    /*margin-top: 10%;*/
+    padding: 5%;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.clearBtnStyle {
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.calcHeaderDesign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calcHeaderDesign-phone_link {
+    height: 40px;
+    width: max-content;
+}
+
+.calcDesignCallBack {
+    margin-right: 100px;
+}
+
+.calcForm {
+    margin-left: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.firstRowCalc, .calcChooseFenceType {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.calcBtns {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.calc_formControl {
+    width: 200px;
+    margin-left: 45%;
+    font-size: 30px;
+}
+
+.calcForm {
+    display: none;
+}
+
+.form-control-calc {
+    height: 60px;
+    width: 130px;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(247, 247, 249);
+}
+
+.btnCalcForm {
+    height: 70px;
+    width: 200px;
+    margin-left: 3%;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btnCalcForm:hover {
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.btnFenceType {
+    height: 70px;
+    width: 170px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btnFenceType:hover,
+.btnFenceType:focus {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+.closeBtnCalcForm {
+    height: 20px;
+    width: 20px;
+    margin-left: 95%;
+}
+
+.quality_icon {
+    height: 1.9rem;
+    width: 1.9rem;
+    align-self: start;
+    margin-left: 40%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*header*/
+.header {
+    height: auto;
+    width: 100%;
+    margin: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.publicContentHeader {
+    width: 99%;
+    padding: 5%;
+    background: #ffffff url(./img/marbleFont.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.main_features {
+    width: 95%;
+    /*height: 70%;*/
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.quality_icon {
+    height: 1.9rem;
+    width: 1.9rem;
+    align-self: start;
+    margin-left: 40%;
+}
+
+.qualityCircle {
+    width: 8.2rem;
+    height: 8.2rem;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./img/circle.png);
+    color: white;
+    user-select: none;
+}
+
+.header_typeOfFence_home {
+    text-align: center;
+    background-color: #333;
+}
+
+.blackBC {
+    width: 50%;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 0;
+    margin-left: 25%;
+}
+
+.blackBC_auth {
+    width: 70%;
+    border-radius: 0;
+    margin-left: 13%;
+}
+
+.btn-primary {
+    height: 50px;
+    width: 70%;
+    margin-left: 10%;
+    background-color: #333;
+    border-radius: 0;
+    border: none;
+    /*margin: 2%;*/
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:checked {
+    background-color: white;
+    color: #333;
+    border: none;
+    /*border:1px solid black;*/
+}
+
+.jumbotron {
+    height: min-content;
+    text-align: center;
+}
+
+.weCanProposeYou {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 4%;
+
+}
+
+.weCanProposeYou > h5 {
+    width: 70px;
+    height: auto;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.navlinksStyle {
+    align-items: baseline;
+    align-content: baseline;
+    text-align: left;
+    /*border: 1px solid black;*/
+    font-size: 15px;
+    /*height: 50px;*/
+    width: 350px;
+    margin: 1%;
+    color: black;
+    text-decoration: none;
+}
+
+.styleOfLogo {
+    height: 80px;
+    width: 120px;
+}
+
+/*.loginPageStyle{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+.formLogin {
+    margin-left: 400px;
+    width: 300px;
+    border-radius: 0;
+}
+
+.formLoginSubmit {
+    margin-left: 400px;
+    width: 300px;
+    border-radius: 0;
+}
+
+.addPaddingButton {
+    margin-bottom: 200px;
+}
+
+.messageStyle {
+    width: 400px;
+    margin-left: 350px;
+}
+
+.headerWithAuthStyle {
+    display: flex;
+    flex-direction: column;
+}
+
+.addStyleForUserTable {
+    display: table;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 20px;
+    height: 200px;
+    width: 60%;
+}
+
+.addStyleForUserTable:hover {
+    background: none;
+}
+
+.tblStyle {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.containTable {
+    display: flex;
+    justify-content: center;
+}
+
+.jumbotron {
+    color: white;
+    background: rgb(253, 109, 0);
+    background: linear-gradient(0deg, rgba(253, 109, 0, 1) 0%, rgba(255, 213, 0, 1) 80%);
+}

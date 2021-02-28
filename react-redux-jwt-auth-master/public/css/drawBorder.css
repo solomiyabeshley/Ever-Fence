@@ -1,0 +1,67 @@
+.draw-border {
+  box-shadow: inset 0 0 0 3px #333;
+  transition: color 0.35s 0.1166666667s;
+  position: relative;
+  outline: none; }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0; }
+  .draw-border::before {
+    border-bottom-width: 3px;
+    border-left-width: 3px; }
+  .draw-border::after {
+    border-top-width: 3px;
+    border-right-width: 3px; }
+  .draw-border:hover {
+    color: #c1c1c1; }
+    .draw-border:hover::before, .draw-border:hover::after {
+      border-color: #c1c1c1;
+      transition: border-color 0s, width 0.35s, height 0.35s;
+      width: 100%;
+      height: 100%; }
+    .draw-border:hover::before {
+      transition-delay: 0s, 0s, 0.35s; }
+    .draw-border:hover::after {
+      transition-delay: 0s, 0.35s, 0s; }
+
+.button-drawing {
+  box-shadow: inset 0 0 0 3px #ffaa00;
+  transition: color 0.35s 0.1166666667s;
+  position: relative;
+  outline: none; }
+  .button-drawing::before, .button-drawing::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0; }
+  .button-drawing::before {
+    border-bottom-width: 3px;
+    border-left-width: 3px; }
+  .button-drawing::after {
+    border-top-width: 3px;
+    border-right-width: 3px; }
+  .button-drawing:hover {
+    color: #ac4900; }
+    .button-drawing:hover::before, .button-drawing:hover::after {
+      border-color: #ac4900;
+      transition: border-color 0s, width 0.35s, height 0.35s;
+      width: 100%;
+      height: 100%; }
+    .button-drawing:hover::before {
+      transition-delay: 0s, 0s, 0.35s; }
+    .button-drawing:hover::after {
+      transition-delay: 0s, 0.35s, 0s; }
+
+/*# sourceMappingURL=drawBorder.css.map */

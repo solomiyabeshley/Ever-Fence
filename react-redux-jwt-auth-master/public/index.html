@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="logo-design.jpg" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css"
+          integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="src/App.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <title>Ever Fence</title>
+</head>
+<body>
+<div id="root"></div>
+<!--button calc fence cost-->
+<div>
+    <button class="button btn_of_Fence" onclick="open_closeCalcForm()">Дізнатись варість</button>
+</div>
+<div>
+    <!--    calc form fence-->
+    <div class="calcForm" id="openForm">
+        <div id="closeCalcBtn" onclick="closeModalCalcForm()">
+            <img src="img/close.png" alt="" class="closeBtnCalcForm">
+        </div>
+        <h4>Розрахувати вартість:</h4>
+        <br/>
+        <div class="firstRowCalc">
+            <form name="fen2">
+                <label class="col-form-label">
+                    Висота(м):
+                    <input type="text" size="5" name="len" class="form-control-calc" required/>
+                </label>
+            </form>
+            <form name="fen3">
+                <label class="col-form-label">
+                    Ширина(м):
+                    <input type="text" size="5" name="wid" class="form-control-calc" required/>
+                </label>
+            </form>
+            <form name="countGates">
+                <label class="col-form-label">
+                    Кількість стовпців:
+                    <input type="number" min="0" name="count" class="gatesCount form-control-calc" required/>
+                </label>
+            </form>
+        </div>
+        <div>
+            <label>Виберіть тип огорожі:</label>
+            <div class="calcChooseFenceType">
+                <button onclick='fence_type = "FencingBlinds"' class="btnFenceType"> Паркан-жалюзі</button>
+                <button onclick='fence_type = "MetalFence"' class="btnFenceType"> Металевий штахетник</button>
+                <button onclick='fence_type = "RanchoFence"' class="btnFenceType">Металевий паркан Ранчо</button>
+                <button onclick='fence_type = "WeldedGridFence"' class="btnFenceType">Паркан зі зварної сітки</button>
+                <button onclick='fence_type = "TemporaryFencing"' class="btnFenceType">Тимчасова огорожа з металу
+                </button>
+            </div>
+        </div>
+        <form name="fen">
+            <label class="col-form-label">
+                Сума:
+                <input type="text" id="disp" value="0.00" size="5" onchange=''
+                       class="form-control-calc calc_formControl"/>
+            </label>
+        </form>
+        <div class="calcBtns">
+            <button onclick="fence_function()" class="btn btn-outline-primary btnCalcForm">
+                Результат
+            </button>
+            <button onclick='some_variable = "initial string information";
+          some_other_variable = 56; disp.value = "0.00"' class="btn btn-outline-primary  btnCalcForm">
+                Очистити
+            </button>
+        </div>
+    </div>
+</div>
+<div id="root1"></div>
+<div id="root2"></div>
+<div id="root3"></div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
